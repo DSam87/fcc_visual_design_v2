@@ -1,7 +1,163 @@
-:root{
-
+html{
+    background: linear-gradient( rgb(85, 85, 85) 0%, black 50%) no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
 }
+
 
 body{
-    background:url();
+    
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    height: 100%;
+
 }
+
+hr{
+    width: 90%;
+    margin: auto;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+.clear{
+    clear:both;
+}
+
+.float-container{
+    width: 100%;
+    margin: auto;
+}
+
+.float-container img{
+    margin: auto;
+    height: 100px;
+    width: auto;
+    margin: 5px;
+}
+
+
+
+
+.float-container div{
+    height: 100px;
+    margin: 5px;
+
+
+}
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.left{
+    width:50px;
+    background: red;
+    float: left;
+}
+
+.right{
+    width:50px;
+    background: red;
+    float: right;
+
+}
+
+.img-s{
+    width: 200px;
+}
+
+.img-m{
+    width: 300px;
+}
+
+.img-l{
+    width: 400px;
+}
+
+
+.text-transform{
+    text-transform: uppercase;
+}
+
+.font-size{
+    font-size: .8em;
+}
+
+.font-weight{
+    font-weight:bolder;
+}
+
+.line-height{
+    line-height: 5.2em;
+
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    left: 10%;
+
+    animation-name: roll;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes roll{
+    0%{
+        left: 10%;
+        color: red;
+    }
+    50%{
+        left: 90%;
+        color: blue;
+    }
+    100%{
+        left: 10%;
+        color: green;
+    }
+    
+}
+
+.rectangle{
+    width: 350px;
+    height: 50px;
+    background-color: blue;
+    margin: 20px auto;
+    animation-name: color-switch;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+
+
+@keyframes color-switch{
+    
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    80%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+
+
