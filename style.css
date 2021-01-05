@@ -1,13 +1,15 @@
 html{
-    background: linear-gradient( rgb(85, 85, 85) 0%, black 50%) no-repeat;
-    background-size: cover;
     height: 100%;
-    background-attachment: fixed;
+    background-color: black;
+
+
 }
 
 
 body{
-    
+    background: linear-gradient( rgb(85, 85, 85) 0%, black 90%) no-repeat;
+    background-size: cover;
+
     font-family: 'Ubuntu', sans-serif;
     color: white;
     letter-spacing: 3px;
@@ -20,7 +22,14 @@ hr{
     margin: auto;
 }
 
-h1,h2{
+h1{
+    text-align: center;
+    margin: 0;
+    padding:0;
+
+}
+
+h2{
     text-align: center;
 }
 
@@ -134,12 +143,24 @@ h1,h2{
     height: 50px;
     background-color: blue;
     margin: 20px auto;
+    text-align: center;
+    position:relative;
+    
+
+
+
+
+}
+.rectangle p{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rectangle:hover{
     animation-name: color-switch;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-
-
-
 }
 
 
