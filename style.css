@@ -161,6 +161,7 @@ h2{
     animation-name: color-switch;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    transform: scale(1.1);
 }
 
 
@@ -169,6 +170,7 @@ h2{
     
     0%{
         background-color: blue;
+
     }
     50%{
         background-color: red;
